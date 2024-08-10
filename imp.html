@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/70a81ab19a.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minders</title>
+    <link rel="stylesheet" href="imp.css">
+    
+    <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="./images/favicon-32x32.png"
+  />
+</head>
+<body>
+  <header>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+      <label class="logo"> LOGO </label>
+      <ul>
+        <li><a class="active" href="">Home</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Support</a></li>
+        <li><a href="">Personal Stories</a></li>
+        <li><a href="">Legal Support</a></li>
+        <li style="float: right; display: flex; justify-content: center; align-items: center;">
+          <a href=""><button class="b1">LOGIN</button></a>
+          <a href=""><button class="b3">SIGN UP</button></a>  
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Comment Section -->
+  <main>
+    <div class="comment-section">
+      <div class="comments-wrp">
+        <!-- Comments will be inserted here dynamically -->
+      </div> <!-- comments wrapper -->
+      
+      <div class="reply-input container">
+        <img src="images/avatars/image-juliusomo.webp" alt="" class="usr-img">
+        <textarea class="cmnt-input" placeholder="Add a comment..."></textarea>
+        <button class="bu-primary">SEND</button>
+      </div> <!-- reply input -->
+    </div> <!-- comment section -->
+    
+    <div class="modal-wrp invisible">
+      <div class="modal container">
+        <h3>Delete comment</h3>
+        <p>Are you sure you want to delete this comment? This will remove the comment and can't be undone.</p>
+        <button class="yes">YES, DELETE</button>
+        <button class="no">NO, CANCEL</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Chatbox Section -->
+  <section class="chat-section">
+    <h1>Mental Health Chatbot</h1>
+    <div class="chat-box" id="chat-box"></div>
+    <input type="text" id="user-input" placeholder="Type your message..." />
+    <button id="send-button">Send</button>
+  </section>
+
+</body>
+<script src="app.js"></script>
+<script src="scripta.js"></script>
+</html>
